@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.2.0",
   "type": "module",
-  "homepage": "http://stanleyluong.github.io/svelte-tubeapp",
+  "homepage": "https://stanleyluong.github.io/SvelteTube",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

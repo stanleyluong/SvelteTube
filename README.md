@@ -56,6 +56,34 @@ npm run build
 
 The build files will be in the `dist` directory and can be deployed to any static hosting service.
 
+## Deployment
+
+### Manual Deployment to GitHub Pages
+
+You can manually deploy the app to GitHub Pages using:
+
+```
+npm run deploy
+```
+
+This will create a production build and push it to the `gh-pages` branch of your repository.
+
+### CI/CD with GitHub Actions
+
+This repository is configured to automatically deploy to GitHub Pages using GitHub Actions when you push to the main branch. The deployment process:
+
+1. Checks out the code
+2. Sets up Node.js and installs dependencies
+3. Builds the project
+4. Deploys to GitHub Pages
+
+To set up the CI/CD pipeline:
+
+1. Go to your GitHub repository settings
+2. Select "Pages" from the left sidebar
+3. Set the source to "GitHub Actions"
+4. Add your YouTube API key as a repository secret named `VITE_API_KEY`
+
 ## Project Structure
 
 - `src/` - Source code
